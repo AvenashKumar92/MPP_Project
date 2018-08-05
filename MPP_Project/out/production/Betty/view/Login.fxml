@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="400.0" prefWidth="400" styleClass="anchor" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SystemController">
+   <stylesheets>
+      <URL value="@Login.css" />
+   </stylesheets>
+   <children>
+      <TextField fx:id="loginText" layoutX="117.0" layoutY="156.0" style="-fx-font-style: italic" promptText="User ID" />
+      <PasswordField fx:id="loginPass" layoutX="117.0" layoutY="206.0" style="-fx-font-style: italic" promptText="Password" />
+      <Button fx:id="LoginSubmit" style="-fx-font-style: italic" graphicTextGap="5.0" layoutX="117.0" layoutY="320.0" mnemonicParsing="false" onAction="#login" pickOnBounds="false" prefHeight="37.0" prefWidth="80.0" snapToPixel="false" text="Submit" textAlignment="CENTER" textFill="#851111">
+         <font>
+            <Font size="16.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="myMessage" alignment="CENTER" style="-fx-font-style: italic"  cache="true" depthTest="ENABLE" layoutX="43.0" layoutY="20.0" mnemonicParsing="true" mouseTransparent="true" prefHeight="57.0" prefWidth="334.0" text="LOGIN">
+         <effect>
+            <Glow level="0.7" />
+         </effect>
+         <font>
+            <Font size="34.0" />
+         </font></Label>
+      <Label fx:id="ErrorLabel"  style="-fx-font-style: italic" alignment="BOTTOM_CENTER" layoutX="31.0" layoutY="98.0" prefHeight="40.0" prefWidth="323.0" />
+      <Button fx:id="exit" style="-fx-font-style: italic"  graphicTextGap="5.0" layoutX="265.0" layoutY="320.0" mnemonicParsing="false" onAction="#exitSystem" pickOnBounds="false" prefHeight="37.0" prefWidth="66.0" snapToPixel="false" text="Exit" textAlignment="CENTER" textFill="#851111" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

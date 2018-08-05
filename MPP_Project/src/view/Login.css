@@ -1,0 +1,5 @@
+.anchor {
+    -fx-background-image:url('https://i.pinimg.com/736x/1d/49/1c/1d491c233dae44024642aee060113054--library-logo-reading-tree.jpg');
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SystemController">
+   <children>
+      <Pane prefHeight="482.0" prefWidth="394.0">
+         <children>
+            <Label alignment="CENTER" layoutX="53.0" layoutY="29.0" prefHeight="40.0" prefWidth="261.0" text="Librarian Homepage" textFill="#6b1d1d">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="signOut" layoutX="141.0" layoutY="332.0" mnemonicParsing="false" onAction="#signOut" prefHeight="40.0" prefWidth="119.0" text="Signout" textFill="#7c2929">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchLibMember" layoutX="221.0" layoutY="198.0" mnemonicParsing="false" onAction="#searchLibMember" prefHeight="40.0" prefWidth="153.0" text="Search Member" textFill="#722121">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkoutBook" layoutX="14.0" layoutY="201.0" mnemonicParsing="false" onAction="#librariancheckout" prefHeight="40.0" prefWidth="163.0" text="Checkoout Book" textFill="#802121">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SystemController">
+   <children>
+      <Pane prefHeight="508.0" prefWidth="481.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="34.0" layoutY="40.0" prefHeight="45.0" prefWidth="321.0" text="Add book to Library collection" textFill="#6f2626">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="113.0" text="ISBN :" textFill="#791f1f">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="149.0" text="Title :" textFill="#611e1e">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="214.0" text="Number of copies: " textFill="#7c2626">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="181.0" text="Checkout Length: " textFill="#832c2c">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addBook_isbn" layoutX="226.0" layoutY="113.0" prefHeight="25.0" prefWidth="197.0" />
+            <TextField fx:id="addBook_title" layoutX="228.0" layoutY="149.0" prefHeight="25.0" prefWidth="197.0" />
+            <TextField fx:id="AddBook_checkLength" layoutX="228.0" layoutY="179.0" prefHeight="25.0" prefWidth="197.0" />
+            <TextField fx:id="addBook_numCopies" layoutX="228.0" layoutY="213.0" prefHeight="25.0" prefWidth="197.0" />
+            <Button fx:id="addAuthor" layoutX="37.0" layoutY="312.0" mnemonicParsing="false" onAction="#addAuthor" text="Authors" textFill="#722424">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="backtoHompage" layoutX="276.0" layoutY="375.0" mnemonicParsing="false" onAction="#backtoHompage" prefHeight="45.0" prefWidth="178.0" text="Back home page" textFill="#682121">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="addBookToLibrary" layoutX="36.0" layoutY="377.0" mnemonicParsing="false" onAction="#addBookToLibrary" text="Submit" textFill="#682424">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

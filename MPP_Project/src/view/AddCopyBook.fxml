@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500" prefWidth="400" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SystemController">
+   <children>
+      <Button fx:id="SearchCopyBook" layoutX="54.0" layoutY="357.0" mnemonicParsing="false" onAction="#searchBook" prefHeight="45.0" prefWidth="80.0" text="Search" textFill="#681d1d">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="AddcopyBook" layoutX="217.0" layoutY="357.0" mnemonicParsing="false" onAction="#addCopyOfBook" prefHeight="45.0" prefWidth="140.0" text="Add copy of book" textFill="#6b1111">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <TextField fx:id="isbnId" layoutX="117.0" layoutY="116.0" prefHeight="27.0" prefWidth="226.0" />
+      <Label layoutX="46.0" layoutY="121.0" prefHeight="24.0" prefWidth="67.0" text="ISBN: " textFill="#651313">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="searchResult" layoutX="50.0" layoutY="230.0" prefHeight="73.0" prefWidth="307.0" textFill="#5b1717">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font></Label>
+      <Label alignment="TOP_CENTER" layoutX="58.0" layoutY="58.0" prefHeight="27.0" prefWidth="269.0" text="Add copy of Book" textFill="#651212">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="backtoHompage" layoutX="118.0" layoutY="439.0" mnemonicParsing="false" onAction="#backtoHompage" prefHeight="25.0" prefWidth="169.0" text="Back home page" textFill="#571313">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
